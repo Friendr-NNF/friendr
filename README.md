@@ -46,6 +46,13 @@ The app's source files reside in the `src/` folder.
 
 `main.jsx` is the entry point of the application
 
+Any new pages go in `/src/pages/`
+
+# Important!
+
+When making a new page, make sure to give each className a unique identifier to prevent
+conflicting CSS rules to affect more than one `.jsx` page
+
 # Useful resources
 
 I (Bjtn1) use most of these and other sources to understand what to do and what I'm doing
