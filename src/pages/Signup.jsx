@@ -83,7 +83,7 @@ const Signup = () => {
           </button>
         </div>
         <input
-          type="password"
+          type={showPassword ? "text" : "password"}
           placeholder="Confirm Password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
