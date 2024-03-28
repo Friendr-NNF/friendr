@@ -87,7 +87,7 @@ Any new pages go in `/src/pages/`
 # Important!
 
 When making a new page, make sure to give each className a unique identifier to prevent
-conflicting CSS rules to affect more than one `.jsx` page
+conflicting CSS rules affecting more than one `.jsx` page
 
 <!-- TOC --><a name="useful-resources"></a>
 # Useful resources
