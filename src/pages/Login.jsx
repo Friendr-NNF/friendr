@@ -9,9 +9,8 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = () => {
-    // Implement login logic here
-    console.log('Username:', username);
-    console.log('Password:', password);
+    // TODO Implement login logic here
+    alert(`Username = ${username}\nPassword = ${password}`);
   };
 
   const togglePasswordVisibility = () => {
@@ -19,25 +18,25 @@ const Login = () => {
   };
 
   const handleForgotPassword = () => {
-    // Implement logic for forgot password functionality
-    console.log('Forgot password clicked');
+    // TODO Implement logic for forgot password functionality
+    alert('Forgot password clicked');
   };
 
   const handleSignUp = () => {
-    // Implement logic for sign up
-    console.log('Sign up clicked');
+    // TODO Implement logic for sign up
+    alert('Sign up clicked');
   };
 
   return (
-    <div className="login-container">
-      <h2>Login to Friendr</h2>
+    <div className="login-container-in-login">
+      <h2 className="login-to-friendr-h2">Login to Friendr</h2>
       <form>
         <input
           type="text"
           placeholder="Email or username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="input-field"
+          className="email-or-user-box-in-login"
         />
         <div className="password-field">
           <input
@@ -45,12 +44,12 @@ const Login = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="input-field password-input"
+            className="password-box-in-login"
           />
           <button
             type="button"
             onClick={togglePasswordVisibility}
-            className="show-password-button"
+            className="show-password-button-in-login"
           >
             {showPassword ? "Hide" : "Show"}
           </button>
@@ -65,12 +64,12 @@ const Login = () => {
         <button
           type="button"
           onClick={handleLogin}
-          className="login-button"
+          className="login-button-in-login"
         >
           Login
         </button>
       </form>
-      <div className="signup-container">
+      <div className="signup-container-in-login">
         <span>New to us?</span>
         <button
           type="button"

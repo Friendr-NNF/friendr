@@ -2,6 +2,7 @@
 
 /* Website Color Palette */
 :root {
+  --dark-black-color: #1a1a1a;
   --black-color: #222831;
   --lighter-black-color: #393E46;
   --teal-color: #00ADB5;
@@ -9,21 +10,7 @@
   --white-color: #EEEEEE;
 }
 
-.password-field {
-  display: flex;
-  align-items: center;
-}
-
-.show-password-button {
-  margin-left: 10px;
-  display: block;
-  width: calc(20%);
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.login-container {
+.login-container-in-login {
   width: 400px;
   margin: 100px auto;
   padding: 20px;
@@ -34,12 +21,13 @@
   text-align: center;
 }
 
-h2 {
+.login-to-friendr-h2 {
   margin-bottom: 20px;
   color: var(--white-color);
 }
 
-.input-field {
+.email-or-user-box-in-login,
+.password-box-in-login {
   display: block;
   width: calc(100% - 20px);
   margin-bottom: 20px;
@@ -50,7 +38,21 @@ h2 {
   color: #fff;
 }
 
-.login-button {
+.password-field {
+  display: flex;
+  align-items: center;
+}
+
+.show-password-button-in-login {
+  margin-left: 10px;
+  display: block;
+  width: calc(20%);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.login-button-in-login {
   display: block;
   width: calc(100%);
   margin-bottom: 20px;
@@ -82,15 +84,15 @@ h2 {
   text-decoration: underline;
 }
 
-.signup-container {
+.signup-container-in-login {
   text-align: center;
 }
 
-.signup-container span {
+.signup-container-in-login span {
   display: block;
 }
 
-.signup-container button {
+.signup-container-in-login button {
   border: none;
   margin-top: 10px;
   background-color: var(--teal-color);
@@ -99,6 +101,6 @@ h2 {
   transition: background-color 0.3s; /* Add transition effect */
 }
 
-.signup-container button:hover {
+.signup-container-in-login button:hover {
   background-color: var(--darker-teal-color);
 }
