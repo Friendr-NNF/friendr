@@ -1,7 +1,7 @@
 // src/pages/Login.jsx
 
 import React, { useState } from 'react';
-import './Login.css'; // Import CSS for styling
+import './Login.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');

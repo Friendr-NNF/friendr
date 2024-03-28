@@ -1,4 +1,4 @@
-/* src/pages/Login.css */
+/* src/pages/Signup.css */
 
 /* Website Color Palette */
 :root {
@@ -10,8 +10,8 @@
   --white-color: #EEEEEE;
 }
 
-.login-container-in-login {
-  width: 400px;
+.signup-container-in-signup {
+  width: 500px;
   margin: 100px auto;
   padding: 20px;
   background-color: var(--black-color);
@@ -20,13 +20,18 @@
   text-align: center;
 }
 
-.login-to-friendr-h2 {
+.signup-to-friendr-h2 {
   margin-bottom: 20px;
   color: var(--white-color);
 }
 
-.email-or-user-box-in-login,
-.password-box-in-login {
+.first-name-box-in-signup,
+.last-name-box-in-signup,
+.username-box-in-signup,
+.email-box-in-signup,
+.confirm-email-box-in-signup,
+.password-box-in-signup,
+.confirm-password-box-in-signup {
   display: block;
   width: calc(100% - 20px);
   margin-bottom: 20px;
@@ -41,7 +46,11 @@
   align-items: center;
 }
 
-.show-password-button-in-login {
+.password-input {
+  flex: 1;
+}
+
+.show-password-button-in-signup {
   margin-left: 10px;
   display: block;
   width: calc(20%);
@@ -50,22 +59,7 @@
   border-radius: 4px;
 }
 
-.forgot-password-button {
-  background: none;
-  border: none;
-  color: var(--teal-color);
-  text-decoration: none;
-  cursor: pointer;
-  margin-left: auto;
-  display: block;
-  transition: text-decoration 0.3s;
-}
-
-.forgot-password-button:hover {
-  text-decoration: underline;
-}
-
-.login-button-in-login {
+.signup-button-in-signup {
   display: block;
   width: calc(100%);
   margin-bottom: 20px;
@@ -77,20 +71,19 @@
   transition: background-color 0.3s;
 }
 
-.login-button-in-login:hover {
+.signup-button-in-signup:hover {
   background-color: var(--darker-teal-color);
 }
 
-
-.signup-container-in-login {
+.login-container-in-signup {
   text-align: center;
 }
 
-.signup-container-in-login span {
+.login-container-in-signup span {
   display: block;
 }
 
-.signup-container-in-login button {
+.login-container-in-signup button {
   border: none;
   margin-top: 10px;
   background-color: var(--teal-color);
@@ -98,6 +91,6 @@
   transition: background-color 0.3s;
 }
 
-.signup-container-in-login button:hover {
+.login-container-in-signup button:hover {
   background-color: var(--darker-teal-color);
 }
