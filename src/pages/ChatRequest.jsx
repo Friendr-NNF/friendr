@@ -3,17 +3,15 @@
 import React from 'react';
 import './ChatRequest.css'; // Import CSS for styling
 
-const ChatRequest = ({ requesterName, onAccept, onDecline }) => {
+const ChatRequest = ({ requesterName }) => {
   const handleAccept = () => {
     // TODO Implement logic for accepting the chat request
     alert('Chat request accepted');
-    onAccept(); // Call the onAccept function passed as prop
   };
 
   const handleDecline = () => {
     // TODO Implement logic for declining the chat request
     alert('Chat request declined');
-    onDecline(); // Call the onDecline function passed as prop
   };
 
   return (
@@ -28,6 +26,10 @@ const ChatRequest = ({ requesterName, onAccept, onDecline }) => {
       </div>
     </div>
   );
+};
+
+ChatRequest.defaultProps = {
+  requesterName: "Barack Obama"
 };
 
 export default ChatRequest;
