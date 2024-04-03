@@ -1,6 +1,7 @@
 # This exists so that after getting the template `config.env` that has NO PASSWORD, you can safely do `git add .` 
 # without worrying about accidentally adding the password to github
 config.env
+*.env
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,react,yarn
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,react,yarn
