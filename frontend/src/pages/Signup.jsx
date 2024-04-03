@@ -29,7 +29,7 @@ const Signup = () => {
 
   return (
     <div className="signup-container-in-signup">
-      <h2 className="signup-to-friendr-h2">Sign Up to Friendr</h2>
+      <h2 className="signup-to-friendr-h2">Sign Up to Chips</h2>
       <form>
         <input
           type="text"

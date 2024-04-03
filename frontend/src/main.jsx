@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     path: "signup",
     element: <Signup/>,
   },
+  {
+    path: "request",
+    element: <ChatRequest/>,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

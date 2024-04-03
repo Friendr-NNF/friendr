@@ -29,7 +29,7 @@ const Login = () => {
 
   return (
     <div className="login-container-in-login">
-      <h2 className="login-to-friendr-h2">Login to Friendr</h2>
+      <h2 className="login-to-friendr-h2">Login to Chips</h2>
       <form>
         <input
           type="text"
