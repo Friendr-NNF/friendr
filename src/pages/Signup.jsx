@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './Signup.css';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const [firstName, setFirstName] = useState('');
@@ -24,7 +25,6 @@ const Signup = () => {
 
   const handleLogin = () => {
     // TODO Implement logic for navigating to login page
-    alert('Login button clicked');
   };
 
   return (
@@ -99,6 +99,7 @@ const Signup = () => {
       </form>
       <div className="login-container-in-signup">
         <span>Already have an account?</span>
+        <Link to="/login">
         <button
           type="button"
           onClick={handleLogin}
@@ -106,6 +107,7 @@ const Signup = () => {
         >
           Login
         </button>
+        </Link>
       </div>
     </div>
   );
